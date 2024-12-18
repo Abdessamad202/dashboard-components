@@ -91,11 +91,16 @@ ul {
 }
 /* End Sidebar */
 /* Start Content */
-.content {
-  overflow: hidden;
-  width: calc(100% - 250px);
-  margin: 0 0 0 auto;
+@media (min-width: 767px) {
+  .content {
+    width: calc(100% - 250px);
+  }
 }
+.content {
+  margin: 0 0 0 auto;
+  overflow: hidden;
+}
+
 .head .search::before {
   font-family: var(--fa-style-family-classic);
   content: "\f002";
